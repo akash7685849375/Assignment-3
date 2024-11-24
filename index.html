@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Smoothie Machine</h1>
+    </header>
+    <main>
+        <form id="smoothieForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="size">Smoothie Size:</label>
+            <select id="size" name="size" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <label>Pick Your Ingredients:</label>
+            <div id="ingredients">
+                <input type="checkbox" id="banana" value="Banana"> <label for="banana">Banana</label>
+                <input type="checkbox" id="strawberry" value="Strawberry"> <label for="strawberry">Strawberry</label>
+                <input type="checkbox" id="blueberry" value="Blueberry"> <label for="blueberry">Blueberry</label>
+                <input type="checkbox" id="spinach" value="Spinach"> <label for="spinach">Spinach</label>
+                <input type="checkbox" id="protein" value="Protein Powder"> <label for="protein">Protein Powder</label>
+            </div>
+
+            <label for="sweetener">Sweetener:</label>
+            <select id="sweetener" name="sweetener" required>
+                <option value="Honey">Honey</option>
+                <option value="Sugar">Sugar</option>
+                <option value="Stevia">Stevia</option>
+                <option value="None">None</option>
+            </select>
+
+            <label for="notes">Special Instructions:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any special requests..."></textarea>
+
+            <button type="button" id="orderButton">Order Smoothie</button>
+        </form>
+        <div id="output"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
